@@ -12,6 +12,10 @@ const Medico = database.sequelize.define('medico',{
     nome:{
         type: Sequelize.STRING,
         allowNull: false
+    },
+    crm:{
+        type: Sequelize.STRING,
+        allowNull: false
     }
     }
 )
