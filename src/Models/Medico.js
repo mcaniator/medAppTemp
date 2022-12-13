@@ -1,8 +1,9 @@
+const Sequelize = require('sequelize');
+const db = require('../Configurations/database.js');
 
-const Sequelize = require('sequelize'); 
-const database = require('./db');
 
-const Medico = database.sequelize.define('medico',{
+
+const Medico = db.define('medico',{
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -20,5 +21,5 @@ const Medico = database.sequelize.define('medico',{
     }
 )
 
-
 module.exports = Medico;
+
